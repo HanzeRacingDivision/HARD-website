@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #222;
+
+    &.fancy {
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+    }
+}
+
+img {
+    max-width: 100%;
+    align-self: center;
+}
+
+p, ul, ol {
+    line-height: 1.8;
+    margin: 0.5em 0;
+}
+
+a {
+    color: $accent;
+}
+
+.capitalize {
+    text-transform: uppercase;    
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1em 0;
+    padding: 0.5em 2em;
+    background: $accent;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.2em;
+}
+
+.center {
+    text-align: center;
+}

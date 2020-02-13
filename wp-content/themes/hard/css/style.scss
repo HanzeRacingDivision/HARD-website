@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700');
+
+$accent: #5188F7;
+$darkblue: #07374D;
+
+.maxwidth {
+    margin: auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+@import 'markup';
+@import 'nav';
+@import 'header';
+@import 'footer';
+@import 'home';

@@ -1,0 +1,29 @@
+footer {
+    background: #222;
+    color: #ccc;
+    font-size: 1em;
+    padding: 2em 0 6em 0;
+
+    .row {
+        display: flex;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+
+            .col {
+                width: 100%;
+                padding: 1em !important;
+            }
+        }
+
+    }
+
+    .col {
+        padding: 2em;
+
+        &:first-child { padding-left: 0; }
+        &:last-child { padding-right: 0; }
+
+    }
+
+}
