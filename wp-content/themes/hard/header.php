@@ -26,6 +26,20 @@
 
 <body <?php body_class() ?>>
 
-<?php if(!is_front_page()): ?>
+<header id="header">
 
-<?php endif; ?>
+	<nav id="main-nav">
+		<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => false ) ); ?>
+	</nav>
+
+	<?php if(is_front_page()): ?>
+
+		<?php get_template_part('template_parts/header-content', 'home'); ?>
+
+	<?php else: ?>
+
+		<?php get_template_part('template_parts/header-content'); ?>
+
+	<?php endif; ?>
+
+</header>

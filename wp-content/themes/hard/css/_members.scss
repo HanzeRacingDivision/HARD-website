@@ -1,0 +1,94 @@
+
+
+.members {
+    padding: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4em;
+    // margin: 0 -1em;
+    
+    &.board-members {
+        padding-top: 0;
+    }
+
+    .member {
+        width: 33%;
+        padding: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+        
+        @media screen and (max-width: 800px){
+            width: 50%;
+            padding: 1em;
+        }
+
+        img {
+            width: 8em;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: black;
+            font-weight: bold;
+        }
+
+        .role {
+            color: $orange;
+        }
+    }
+}
+
+.team-stats {
+    margin-bottom: 4em;
+    position: relative;
+    padding-top: 40%;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    }
+
+    .stats {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        justify-content: space-around;
+        font-style: italic;
+        
+        .stat {
+            text-align: center;
+        }
+        
+        p {
+            color: white;
+        }
+        .name {
+            text-transform: uppercase;
+            font-size: 1.6vw;
+            font-weight: bold;
+            margin: 0;
+        }
+        .val {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 4.4vw;
+            margin-top: 0;
+        }
+
+        @media screen and (max-width: 800px){
+            .name { font-size: 2.4vw;}
+            .val { font-size: 6vw;}
+        }
+    }
+}

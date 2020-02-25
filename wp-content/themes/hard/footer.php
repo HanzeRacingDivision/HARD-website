@@ -1,6 +1,6 @@
 <footer>
-    <div class="maxwidth row">
-        
+    <div class="maxwidth">
+        <img class="logo" src="<?php echo bloginfo('template_url') . '/img/logos/hard-white.svg'; ?>">
     </div>
 </footer>
 

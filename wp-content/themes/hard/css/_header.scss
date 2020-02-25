@@ -1,0 +1,29 @@
+#header {
+    background-image: url('./../img/header.jpg');
+    background-size: cover;
+
+    .header-content {
+        padding: 5em 0;
+
+        h1 {
+            font-size: 4em;
+            font-size: 6vw;
+            margin: 1rem 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            line-height: 0.96;
+            color: $darkblue;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        &.home {
+            h1 {
+                font-size: 4.85vw;
+            }
+        }
+    }
+}

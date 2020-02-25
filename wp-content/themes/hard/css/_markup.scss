@@ -10,14 +10,13 @@ html, body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #222;
-
-    &.fancy {
-        letter-spacing: 0.5em;
-        text-transform: uppercase;
-    }
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 0.96;
+    font-style: italic;
+    color: $darkblue;
 }
+
 
 img {
     max-width: 100%;
@@ -25,12 +24,13 @@ img {
 }
 
 p, ul, ol {
-    line-height: 1.8;
+    line-height: 1.7;
     margin: 0.5em 0;
+    color: #555966;
 }
 
 a {
-    color: $accent;
+    color: $orange;
 }
 
 .capitalize {
@@ -46,10 +46,13 @@ a {
     text-decoration: none;
     margin: 1em 0;
     padding: 0.5em 2em;
-    background: $accent;
+    background: $orange;
     color: white;
     cursor: pointer;
-    border-radius: 0.2em;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .center {
