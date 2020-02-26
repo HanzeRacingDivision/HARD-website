@@ -28,9 +28,13 @@
 
 <header id="header">
 
-	<nav id="main-nav">
-		<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => false ) ); ?>
-	</nav>
+	<div id="top-bar">
+		<img class="logo" src="<?php echo bloginfo('template_url') . '/img/logos/hard-blue.svg'; ?>">
+		<img id="hamburger" src="<?php echo bloginfo('template_url') . '/img/hamburger.svg'; ?>">
+		<nav id="main-nav">
+			<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => false ) ); ?>
+		</nav>
+	</div>
 
 	<?php if(is_front_page()): ?>
 

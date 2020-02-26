@@ -10,6 +10,9 @@ $darkblue: #19255B;
     width: 90%;
 }
 
+// Fix WP admin bar overlapping
+body.logged-in #header #top-bar { top: 32px; }
+
 @import 'markup';
 @import 'header';
 @import 'footer';
