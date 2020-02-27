@@ -16,4 +16,10 @@ jQuery(document).ready(function($){
 
 	// https://developers.google.com/sheets/api/guides/values
 
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+
+		$('body').toggleClass('scrolled', (scroll > 0));
+	});
+
 });

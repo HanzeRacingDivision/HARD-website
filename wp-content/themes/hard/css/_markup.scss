@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 img {
     max-width: 100%;
     align-self: center;
+    height: auto;
 }
 
 p, ul, ol {
@@ -57,4 +58,28 @@ a {
 
 .center {
     text-align: center;
+}
+
+.aligncenter {
+	display: block;
+	margin: 2em auto;
+}
+
+.wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
+    display: block;
+}
+
+article,
+#tinymce.wp-editor {
+    max-width: 800px;
+    margin: auto;
+    padding: 3em 0;
+
+    p, ul, ol, li, em, i, a, span, mark, small, strong, b {
+        line-height: 2;
+    }
+}
+
+#tinymce.wp-editor {
+    padding: 1em !important;
 }

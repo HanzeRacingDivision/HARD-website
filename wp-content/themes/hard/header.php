@@ -26,11 +26,16 @@
 
 <body <?php body_class() ?>>
 
-<header id="header">
+
+<header id="header" <?php if(get_field('custom_header_image')){ echo 'class="custom-header" style="background-image: url(\''.get_field('custom_header_image')['sizes']['large'].'\')"'; } ?>>
 
 	<div id="top-bar">
-		<img class="logo" src="<?php echo bloginfo('template_url') . '/img/logos/hard-blue.svg'; ?>">
+		<a class="logo" href="<?php echo home_url(); ?>">
+			<img src="<?php echo bloginfo('template_url') . '/img/logos/hard-blue.svg'; ?>">
+		</a>
+
 		<img id="hamburger" src="<?php echo bloginfo('template_url') . '/img/hamburger.svg'; ?>">
+		
 		<nav id="main-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => false ) ); ?>
 		</nav>
