@@ -1,11 +1,15 @@
 .sponsors-featured {
     .featured-sponsor {
         display: flex;
-        padding: 2em 1em;
+        padding: 1.5em 1em;
+        
+        @media screen and (max-width: 800px){
+            flex-direction: column;
+        }
         
         .image-wrapper {
             width: 40%;
-            padding: 1em; 
+            padding: 1.5em; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,12 +17,62 @@
             img {
                 max-height: 8em;
             }
+
+            @media screen and (max-width: 800px){
+                width: 100%;
+                padding: 0; 
+                padding-bottom: 2em;
+            }
         }
 
         .description {
             width: 60%;
             padding-left: 2em;
             border-left: 2px solid #E5E5E5;
+            
+            @media screen and (max-width: 800px){
+                width: 100%;
+                border-left: none;
+                padding-left: 0;
+                padding-bottom: 1.5em;
+                border-bottom: 2px solid #E5E5E5;
+            }
+        }
+    }
+}
+
+.sponsors-grid {
+    padding: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4em;
+    // margin: 0 -1em;
+    
+    &.board-members {
+        padding-top: 0;
+    }
+
+    .sponsor {
+        width: 33%;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+        padding: 3em;
+        
+        @media screen and (max-width: 800px){
+            width: 50%;
+            padding: 8%;
+        }
+
+        img {
+            max-height: 6em;
+            max-width: 100%;
+            
+            @media screen and (max-width: 800px){
+                max-height: auto;
+            }
         }
     }
 }
