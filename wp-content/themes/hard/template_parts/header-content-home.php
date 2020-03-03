@@ -1,4 +1,3 @@
-
 <section class="header-content home maxwidth">
     
     <h1 class="capitalize">We are</h1>

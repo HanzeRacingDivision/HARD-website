@@ -13,7 +13,7 @@ $featured_query = new WP_Query( $args );
 ?>
 
 <div class="maxwidth">
-    <section class="sponsors-featured maxwidth">
+    <section class="sponsors-featured">
 
         <?php 
 
