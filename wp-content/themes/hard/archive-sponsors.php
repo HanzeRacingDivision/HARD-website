@@ -1,16 +1,11 @@
 <?php get_header(); 
 
+$featured_sponsors = get_field('featured_sponsors', 'sponsors');
+
 $args = array(
     'posts_per_page' => -1,
     'post_type' => 'sponsors',
-    'meta_query' => array(
-        'relation' => 'AND',
-        array(
-            'key' => 'featured',
-            'value' => '1',
-            'type' => 'NUMERIC'
-        )
-    )
+    'post__in' => $featured_sponsors
 );
 
 $featured_query = new WP_Query( $args );
