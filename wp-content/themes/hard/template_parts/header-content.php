@@ -18,7 +18,7 @@ $cta = get_field('cta_btn', $field_location);
     
     <?php if(!empty($cta['url']) && !empty($cta['title'])): ?>
 
-        <a class="btn" href="<?php echo $cta['url']; ?>" href="<?php echo $cta['target']; ?>">
+        <a class="btn header-cta" href="<?php echo $cta['url']; ?>" href="<?php echo $cta['target']; ?>">
             <?php echo $cta['title']; ?>
         </a>
         
