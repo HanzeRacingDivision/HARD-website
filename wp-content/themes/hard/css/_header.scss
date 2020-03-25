@@ -44,7 +44,8 @@
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
-        transition: background-color 200ms ease-in-out;
+        box-shadow: 0 0px 25px -8px rgba(0,0,0,0.0);
+        transition: all 200ms ease-in-out;
         
         .logo { 
             display: block; 

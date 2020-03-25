@@ -22,4 +22,20 @@ jQuery(document).ready(function($){
 		$('body').toggleClass('scrolled', (scroll > 0));
 	});
 
+	if($('.sponsor-slider').length > 0) {
+        $('.sponsor-slider').slick({
+            infinite: true,
+            speed: 300,
+			slidesToShow: 5,
+			draggable: true,
+            // variableWidth: false,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            // adaptiveHeight: true,
+            // prevArrow: '<i aria-hidden="true" class="fas fa-chevron-left prev"></i>',
+            // nextArrow: '<i aria-hidden="true" class="fas fa-chevron-right next"></i>',
+        });
+    }
+
 });
