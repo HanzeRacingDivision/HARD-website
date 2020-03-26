@@ -95,13 +95,41 @@
         }
 
         &.home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .left {
+                width: 50%;
+            }
+
             h1 {
-                font-size: 4.85vw;
+                font-size: 3vw;
+            }
+
+            .car {
+                overflow: hidden;
+                will-change: transform;
+                opacity: 0;
+                width: 50%;
+                animation: car-anim 600ms ease forwards;
+                animation-delay: 1s;
             }
         }
     }
 }
 
+
+@keyframes car-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 body.scrolled {
     #header #top-bar {

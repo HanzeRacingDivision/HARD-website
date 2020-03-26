@@ -5,14 +5,51 @@
         <?php 
         $home_blocks = get_field('blocks', 'option');
 
-        foreach($home_blocks as $block): ?>
-            <div class="home-block home-section">
+        foreach($home_blocks as $block):
+        
+            $link = $block['url'];
+
+            if($link): ?>
+                <a class="home-block home-section" href="<?php echo $block['url']['url']; ?>">
+            <?php else: ?>
+                <div class="home-block home-section">
+            <?php endif; ?>
+                
                 <img src="<?php echo $block['image']['sizes']['large']; ?>">
+                
                 <div class="content">
                     <h2 class="capitalize"><?php echo $block['title']; ?></h2>
-                    <p><?php echo $block['text']; ?></p>
+                    <p class="txt"><?php echo $block['text']; ?></p>
+
+                    <div class="extra-content">
+                        <?php if($block['extra_content_type'] == 'team_stats'): ?>
+                            
+                            <div class="stats">
+                                <?php get_template_part('template_parts/stats-team'); ?>
+                            </div>
+
+                        <?php elseif($block['extra_content_type'] == 'custom_stats'): ?>
+
+                            <div class="stats">
+                                <?php foreach($block['custom_stats'] as $stat): ?>
+                                    <div class="stat">
+                                        <p class="name"><?php echo $stat['name']; ?></p>
+                                        <p class="val"><?php echo $stat['value']; ?></p>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        
+                        <?php endif; ?>
+                    </div>
+
                 </div>
-            </div>
+
+            <?php if($link): ?>
+                </a>
+            <?php else: ?>
+                </div>
+            <?php endif; ?>
+
         <?php endforeach; ?>
     </section>
 
@@ -42,7 +79,7 @@
         <?php get_template_part('template_parts/blogposts'); ?>
 
     </section>
-</div>
 
+</div>
 
 <?php get_footer(); ?>

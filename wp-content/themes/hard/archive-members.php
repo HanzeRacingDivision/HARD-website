@@ -38,6 +38,8 @@ $other_members = $the_query->found_posts;
 
 $total_members = $board_members + $other_members; // Saves another damn query
 
+set_query_var( 'total_members', $total_members );
+
 ?>
 
 <div class="maxwidth">
@@ -62,18 +64,7 @@ $total_members = $board_members + $other_members; // Saves another damn query
 <?php $team_photo = get_field('team_photo', 'members'); ?>
 <section class="team-stats" style="background-image: url('<?php echo $team_photo['url']; ?>')">
     <div class="stats maxwidth">
-        <div class="stat">
-            <p class="name">Total members</p>
-            <p class="val"><?php echo $total_members; ?></p>
-        </div>
-        <div class="stat">
-            <p class="name">Total hours</p>
-            <p class="val"><?php echo '30.206'; // TODO: LINK TO SPREADSHEET ?></p>
-        </div>
-        <div class="stat">
-            <p class="name">Total countries</p>
-            <p class="val"><?php echo wp_count_terms('countries', 'hide_empty=true'); ?></p>
-        </div>
+        <?php get_template_part('template_parts/stats-team'); ?>
     </div>
 </section>
 

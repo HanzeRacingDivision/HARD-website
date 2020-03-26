@@ -1,0 +1,22 @@
+div.wpcf7-response-output {
+    margin: 0;
+    padding: 0.7em;
+}
+div.wpcf7-mail-sent-ok {
+    border-color: #cbe8b9;
+}
+span.wpcf7-not-valid-tip {
+    font-size: 11px;
+}
+
+input[type=email],
+input[type=text],
+input[type=phone],
+input[type=tel],
+input[type=password],
+input[type=email],
+textarea {
+    padding: 1em;
+    border-radius: 0;
+    border: 1px solid #d6d6d6;
+}

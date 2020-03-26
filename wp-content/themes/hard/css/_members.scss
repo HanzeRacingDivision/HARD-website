@@ -62,33 +62,9 @@
     .stats {
         position: relative;
         z-index: 10;
-        display: flex;
-        justify-content: space-around;
-        font-style: italic;
-        
-        .stat {
-            text-align: center;
-        }
         
         p {
             color: white;
-        }
-        .name {
-            text-transform: uppercase;
-            font-size: 1.6vw;
-            font-weight: bold;
-            margin: 0;
-        }
-        .val {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 4.4vw;
-            margin-top: 0;
-        }
-
-        @media screen and (max-width: 800px){
-            .name { font-size: 2.4vw;}
-            .val { font-size: 6vw;}
         }
     }
 }

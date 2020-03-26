@@ -60,17 +60,7 @@ a {
 
 .wpcf7-submit {
     font-size: 0.85em;
-}
-
-div.wpcf7-response-output {
-    margin: 0;
-    padding: 0.7em;
-}
-div.wpcf7-mail-sent-ok {
-    border-color: #cbe8b9;
-}
-span.wpcf7-not-valid-tip {
-    font-size: 11px;
+    margin-right: 0.5em;
 }
 
 .center {
@@ -99,4 +89,15 @@ article,
 
 #tinymce.wp-editor {
     padding: 1em !important;
+}
+
+.slick-slide,
+.slick-slide > div,
+.slick-slide a,
+.slick-slide img {
+    outline: none !important;
+
+    &:focus {
+        outline: none !important;
+    }
 }

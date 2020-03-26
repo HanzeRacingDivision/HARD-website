@@ -9,19 +9,25 @@
 
 .home-block {
     display: flex;
+    text-decoration: none;
 
     img {
         width: 40%;
+        align-self: flex-start;
     }
 
     .content {
         width: 60%;
         padding-left: 2em;
-
+        
         h2 {
             font-size: 2.5em;
             margin-top: 0;
             margin-bottom: 1rem;
+        }
+
+        .txt {
+            margin-bottom: 3em;
         }
     }
 }
