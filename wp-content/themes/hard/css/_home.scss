@@ -4,6 +4,9 @@
 
     h2 {
         font-size: 2.5em;
+        @media screen and (max-width: 800px){
+            font-size: 1.8em;
+        }
     }
 }
 
@@ -21,13 +24,28 @@
         padding-left: 2em;
         
         h2 {
-            font-size: 2.5em;
             margin-top: 0;
             margin-bottom: 1rem;
         }
 
         .txt {
             margin-bottom: 3em;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        padding-bottom: 1em;
+
+        img { width: 100%; }
+
+        .content {
+            width: 100%;
+            padding-left: 0; 
+            padding-top: 1.5em;
+            .txt {
+                margin-bottom: 1em;
+            }
         }
     }
 }

@@ -27,14 +27,35 @@ jQuery(document).ready(function($){
             infinite: true,
             speed: 300,
 			slidesToShow: 5,
+			slidesToScroll: 1,
 			draggable: true,
-            // variableWidth: false,
+            variableWidth: true,
             arrows: true,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 2000,
             // adaptiveHeight: true,
             // prevArrow: '<i aria-hidden="true" class="fas fa-chevron-left prev"></i>',
-            // nextArrow: '<i aria-hidden="true" class="fas fa-chevron-right next"></i>',
+			// nextArrow: '<i aria-hidden="true" class="fas fa-chevron-right next"></i>',
+			responsive: [
+				{
+				  breakpoint: 1200,
+				  settings: {
+					slidesToShow: 4,
+				  }
+				},
+				{
+				  breakpoint: 900,
+				  settings: {
+					slidesToShow: 2,
+				  }
+				},
+				{
+				  breakpoint: 600,
+				  settings: {
+					slidesToShow: 2,
+				  }
+				},
+			]
         });
     }
 
