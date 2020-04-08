@@ -28,12 +28,16 @@
         margin-top: 0;
     }
     
+    @media screen and (min-width: 1600px){
+        .name { font-size: 1em;}
+        .val { font-size: 3em;}
+    }
     @media screen and (max-width: 800px){
         .name { font-size: 2.4vw;}
         .val { font-size: 6vw;}
     }
-    @media screen and (min-width: 1600px){
-        .name { font-size: 1em;}
-        .val { font-size: 3em;}
+    @media screen and (max-width: 640px){
+        .name { font-size: 0.75em;}
+        .val { font-size: 6vw;}
     }
 }
