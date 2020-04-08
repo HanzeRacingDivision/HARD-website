@@ -31,3 +31,7 @@ function theme_setup() {
 add_action( 'after_setup_theme', 'theme_setup' );
 
 add_filter( 'allow_dev_auto_core_updates', '__return_false' );
+
+if ( function_exists( 'eae_encode_emails' ) )  {
+    add_filter( 'acf/load_value', 'eae_encode_emails' );
+}

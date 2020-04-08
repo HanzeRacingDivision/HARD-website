@@ -2,29 +2,35 @@ footer {
     background: $darkblue;
     color: #ccc;
     font-size: 1em;
-    padding: 2em 0 6em 0;
+    padding: 4em 0 4em 0;
     margin-top: 4em;
 
-    .row {
-        display: flex;
-
-        @media screen and (max-width: 800px) {
-            flex-direction: column;
-
-            .col {
-                width: 100%;
-                padding: 1em !important;
-            }
-        }
-
+    .logo {
+        height: 4em;
     }
 
-    .col {
-        padding: 2em;
+    h1,h2,h3,h4,h5,h6 {
+        color: $orange;
+    }
 
-        &:first-child { padding-left: 0; }
-        &:last-child { padding-right: 0; }
+    .footer-text {
+        margin: 2em auto;
 
+        p,span,ul,ol,dd,strong,b {
+            color: white;
+        }
+    }
+
+    .mc4wp-form {
+        input {
+            width: 260px;
+            text-align: center;
+        }
+    }
+
+    .wildsea {
+        height: 3em;
+        margin-top: 2em;
     }
 
 }
