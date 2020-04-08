@@ -7,6 +7,9 @@ footer {
 
     .logo {
         height: 4em;
+        @media screen and (max-width: 380px) {
+            width: 70%;
+        }
     }
 
     h1,h2,h3,h4,h5,h6 {
@@ -25,6 +28,9 @@ footer {
         input {
             width: 260px;
             text-align: center;
+            @media screen and (max-width: 380px) {
+                width: 100%;
+            }
         }
     }
 
