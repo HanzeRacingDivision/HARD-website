@@ -14,10 +14,26 @@ jQuery(document).ready(function($){
 
     $('#hamburger').click(function(e) {
 		e.stopPropagation();
-		menuOpen = !menuOpen;
+		toggleMenu();
+	});
+    $('#main-nav, #top-bar').click(function(e) {
+		e.stopPropagation(); // Prevent auto-closing of the menu
+	});
+
+	function toggleMenu(state) {
+		if(state) {
+			menuOpen = state;
+		} else {
+			menuOpen = !menuOpen;
+		}
         $('#main-nav').toggleClass('active', menuOpen);
 		$('#top-bar').toggleClass('floating', menuOpen);
-    });
+	}
+	
+	$('html').click(function() {
+		toggleMenu(false);
+	});
+	
 
 
 	if($('.sponsor-slider').length > 0) {

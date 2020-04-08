@@ -35,7 +35,7 @@
 <body <?php body_class() ?>>
 
 
-<header id="header" <?php if(get_field('custom_header_image')){ echo 'class="custom-header" style="background-image: url(\''.get_field('custom_header_image')['sizes']['large'].'\')"'; } ?>>
+<header id="header" <?php if(get_field('custom_header_image') && !is_home()){ echo 'class="custom-header" style="background-image: url(\''.get_field('custom_header_image')['sizes']['large'].'\')"'; } ?>>
 
 	<div id="top-bar">
 		<a class="logo" href="<?php echo home_url(); ?>">
@@ -52,6 +52,10 @@
 	<?php if(is_front_page()): ?>
 
 		<?php get_template_part('template_parts/header-content', 'home'); ?>
+		
+	<?php elseif(is_home()): ?>
+
+		<?php get_template_part('template_parts/header-content', 'blog'); ?>
 
 	<?php else: ?>
 
