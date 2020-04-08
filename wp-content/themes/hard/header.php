@@ -34,8 +34,14 @@
 
 <body <?php body_class() ?>>
 
+<?php
 
-<header id="header" <?php if(get_field('custom_header_image') && !is_home()){ echo 'class="custom-header" style="background-image: url(\''.get_field('custom_header_image')['sizes']['large'].'\')"'; } ?>>
+$custom_header_image = get_field('custom_header_image');
+$custom_header_image = !empty($custom_header_image) ? $custom_header_image['sizes']['huge'] : get_the_post_thumbnail_url($post, 'huge');
+
+?>
+
+<header id="header" <?php if(!empty($custom_header_image) && !is_home()){ echo 'class="custom-header" style="background-image: url(\''.$custom_header_image.'\')"'; } ?>>
 
 	<div id="top-bar">
 		<a class="logo" href="<?php echo home_url(); ?>">

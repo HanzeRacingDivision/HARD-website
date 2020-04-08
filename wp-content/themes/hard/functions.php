@@ -25,8 +25,9 @@ add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
 function theme_setup() {
     add_theme_support( 'menus' );
-    add_theme_support( 'title-tag' ); // Add the <title> to wp_head.
-    add_theme_support('post-thumbnails');
+    add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
+    add_image_size( 'huge', 1920, 1080 );
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 
