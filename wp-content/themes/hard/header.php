@@ -37,7 +37,8 @@
 <?php
 
 $custom_header_image = get_field('custom_header_image');
-$custom_header_image = !empty($custom_header_image) ? $custom_header_image['sizes']['huge'] : get_the_post_thumbnail_url($post, 'huge');
+// $custom_header_image = !empty($custom_header_image) ? $custom_header_image['sizes']['huge'] : get_the_post_thumbnail_url($post, 'huge');
+$custom_header_image = !empty($custom_header_image) ? $custom_header_image['sizes']['huge'] : '';
 
 ?>
 

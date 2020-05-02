@@ -11,6 +11,7 @@ span.wpcf7-not-valid-tip {
 
 input[type=email],
 input[type=text],
+input[type=number],
 input[type=phone],
 input[type=tel],
 input[type=password],
@@ -19,4 +20,17 @@ textarea {
     padding: 1em;
     border-radius: 0;
     border: 1px solid #d6d6d6;
+}
+
+article {
+    input[type=email],
+    input[type=text],
+    input[type=number],
+    input[type=phone],
+    input[type=tel],
+    input[type=password],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
 }
