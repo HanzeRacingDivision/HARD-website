@@ -18,6 +18,8 @@ function theme_enqueue_scripts() {
     wp_enqueue_style( 'slick_css', get_template_directory_uri() . '/js/libs/slick/slick.css' );
     wp_enqueue_style( 'slick_theme', get_template_directory_uri() . '/js/libs/slick/slick-theme.css' );
     
+    wp_enqueue_style( 'Font_Awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
