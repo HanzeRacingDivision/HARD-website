@@ -80,18 +80,6 @@ set_query_var( 'total_members', $total_members );
                 while ( $the_query->have_posts() ) : $the_query->the_post();
 
                     get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
-                    get_template_part('template_parts/member', 'griditem');
 
                 endwhile;
             endif;

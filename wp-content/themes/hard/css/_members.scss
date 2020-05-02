@@ -27,9 +27,13 @@
 
         img {
             width: 8em;
+            height: 8em;
+            border-radius: 50%;
+            object-fit: cover;
             border-radius: 50%;
             @media screen and (max-width: 640px){
                 width: 6em;
+                height: 6em;
             }
         }
 

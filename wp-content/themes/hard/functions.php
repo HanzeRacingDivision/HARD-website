@@ -4,6 +4,9 @@ require_once(__DIR__.'/includes/post_types.php');
 require_once(__DIR__.'/includes/taxonomies.php');
 require_once(__DIR__.'/includes/nav_menus.php');
 require_once(__DIR__.'/includes/options_pages.php');
+require_once(__DIR__.'/includes/disable_post_type_singles.php');
+require_once(__DIR__.'/includes/analytics.php');
+
 
 function theme_enqueue_scripts() {
     wp_enqueue_script( 'site_scripts', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), null, true );

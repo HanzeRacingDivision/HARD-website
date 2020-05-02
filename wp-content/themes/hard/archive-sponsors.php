@@ -51,9 +51,6 @@ $the_query = new WP_Query( $args );
                 while ( $the_query->have_posts() ) : $the_query->the_post();
                     
                     get_template_part('template_parts/sponsor', 'griditem');
-                    get_template_part('template_parts/sponsor', 'griditem');
-                    get_template_part('template_parts/sponsor', 'griditem');
-                    get_template_part('template_parts/sponsor', 'griditem');
 
                 endwhile;
             endif;
