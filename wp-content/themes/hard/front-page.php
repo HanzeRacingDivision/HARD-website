@@ -64,7 +64,7 @@
             $sponsors = get_posts(['post_type' => 'sponsors', 'posts_per_page' => -1]);
 
             foreach($sponsors as $sponsor): ?>
-                <a class="sponsor" href="<?php echo $sponsor->guid; ?>">
+                <a class="sponsor" href="<?php echo '/sponsors'; //$sponsor->guid; ?>">
                     <img src="<?php echo get_the_post_thumbnail_url($sponsor, 'medium'); ?>">
                 </a>
             <?php endforeach; ?>
